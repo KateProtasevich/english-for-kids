@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>English For Kids</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>   
+            <nav>
+                <div id="menuBurger">
+                  <input type="checkbox" id ="burger" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <ul id="menu" class="menu rounded">
+                      <li><a href="#main">Main Page</a></li>
+                      <li><a href="#statistics">Statistics</a></li>
+                  </ul>
+                </div>
+                <a href="#main" class="home"></a>
+            </nav>
+            <h1>English for kids</h1>
+            <label class="button">
+                <input type="checkbox" class="switch">
+                <span></span>
+                <span></span>
+            </label>
+        </header>
+        <main>
+        <section class="categories-section" id="#main">
+        </section>
+        <section class="cards-section" >
+            <h2 class="page-name"></h2>
+            <div class="star-container"></div>
+            <div class="cards-container"></div>
+            <button type="button" class="game-button">Start game</button>
+        </section> 
+        <section class="statistics-section" id="statistics">
+            <h2>Statistics</h2>
+            <button type="reset" class="reset">Reset</button>
+            <table>
+                <colgroup>
+                    <col span="1">
+                </colgroup>
+                <thead>
+                    <tr class="row-head">
+                        <th>
+                            Word
+                            <button type="button" class="up">&#8593</button>
+                            <button type="button" class="down">&#8595</button>
+                        </th>
+                        <th>
+                            Category
+                            <button type="button" class="up">&#8593</button>
+                            <button type="button" class="down">&#8595</button>
+                        </th>
+                        <th>
+                            Amount of training
+                            <button type="button" class="up">&#8593</button>
+                            <button type="button" class="down">&#8595</button></th>
+                        <th>
+                            Number of correct answers
+                            <button type="button" class="up">&#8593</button>
+                            <button type="button" class="down">&#8595</button></th>
+                        <th>
+                            Number of mistakes
+                            <button type="button" class="up">&#8593</button>
+                            <button type="button" class="down">&#8595</button></th>
+                        <th>
+                            Error rate, %
+                            <button type="button" class="up">&#8593</button>
+                            <button type="button" class="down">&#8595</button></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section> 
+      </main>  
+      <div class="end-game">
+          <h5 class="game-result"></h5>
+          <img src="" alt="">
+      </div> 
+    <audio id="player" src="assets/audio/correct.mp3"></audio>
+    <script src="script.js" ></script>
+</body>
+</html>
